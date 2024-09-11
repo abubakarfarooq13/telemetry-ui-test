@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.tab:nth-child(2) {
+    margin-left: 12px;
+}
+
+.tab {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    border-radius: 40px;
+    transition: all .3s;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.chart {
+  max-width: 800px;
+  margin: 50px auto 0px auto;  
+}
+
+.active-tab {
+    background-color: #f0f3f7;
+    color: #000;
+}
+
+.active-tab:hover {
+    background-color: #e3eaf4 !important;
+}
+
+.tab:hover {
+    background-color: #fff;
+    color: #000;
+}

@@ -1,0 +1,38 @@
+name: Rust CI
+on:
+  push:
+    branches: [mian]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+
+    - name: Run Clippy
+      run: cargo clippy -- -D warnings
+
+    - name: Run Rustfmt
+      run: cargo fmt -- --check
+
+    - name: Run Tests
+      run: cargo test --all
+
+    - name: Run Cargo Audit
+      run: |
+        cargo install cargo-audit
+        cargo audit
+
+    - name: Run Tarpaulin for Code Coverage
+      run: |
+        cargo install cargo-tarpaulin
+        cargo tarpaulin --out Xml

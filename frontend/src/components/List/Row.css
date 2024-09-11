@@ -1,0 +1,67 @@
+/*
+Source code for the Substrate Telemetry Server.
+Copyright (C) 2023 Parity Technologies (UK) Ltd.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+*/
+
+.Row {
+  color: #b5aeae;
+  cursor: pointer;
+}
+
+.Row td:first-child {
+  min-width: 100px;
+}
+
+.Row:nth-child(even) {
+  /* background-color: #0b091f; */
+  background-color: #f1f4f9;
+}
+
+.Row-synced {
+  color: #000;
+}
+
+.Row-pinned td:first-child {
+  /* border-left: 3px solid #9f54ff; */
+  border-left: 3px solid #b0c0f6;
+  padding-left: 10px;
+  min-width: 200px;
+}
+
+.Row-pinned td:last-child {
+  /* border-right: 3px solid #9f54ff; */
+  border-right: 3px solid #b0c0f6;
+  padding-right: 10px;
+}
+
+.Row-pinned.Row-synced {
+  /* color: #9f54ff; */
+  color: #b0c0f6;
+}
+
+.Row-stale {
+  color: #555;
+}
+
+/* .Row:hover { */
+  /* background-color: #1e1e1e; */
+  /* background-color: #100d2e; */
+/* } */
+
+/* .Row:nth-child(even):hover { */
+  /* background-color: #1e1e1e; */
+  /* background-color: #000;
+} */

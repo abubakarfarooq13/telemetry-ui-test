@@ -1,0 +1,54 @@
+/*
+Source code for the Substrate Telemetry Server.
+Copyright (C) 2023 Parity Technologies (UK) Ltd.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* .Header {
+  width: 100%;
+  height: 108px;
+  overflow: hidden;
+  background-color: #0b051f;
+  color: #fff;
+  min-width: 1350px;
+  position: relative;
+} */
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #f0f3f7;
+  gap: 32px;
+  /* min-height: 108px; */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  /* min-width: 1350px; */
+  padding: 20px;
+}
+
+.Header-tabs {
+  /* position: absolute;
+  right: 5px;
+  bottom: 10px; */
+  width: 200px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  /* text-align: right; */
+}
+.pagetwo{
+  cursor: pointer;
+}
